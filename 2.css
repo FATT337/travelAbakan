@@ -1,0 +1,269 @@
+*{margin:0px;}
+
+p{font-family: 'Source Sans Pro', sans-serif;}
+.основа{
+	width: 100%;
+	height: 10500px;
+	float: left;
+}
+.slideshow {
+	margin: 0 auto;
+	position: relative;
+	width: 100%;
+	height: 850px;
+	float: left;	
+}
+.slideshow__nav {
+	align-items: center;
+	color: #fff;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	height: 50px;
+	margin-top: -25px;
+	position: absolute;
+	top: 50%;
+	transition: all linear .3s;
+	width: 50px;
+}
+.slideshow__nav:hover { background-color: rgba(0, 0, 0, .8); }
+.slideshow__nav.slideshow__nav--prev { left: 0; }
+.slideshow__nav.slideshow__nav--next { right: 0; }
+.slide {
+	display: none;
+	position: relative;
+}
+.slide.active {
+	animation: fade linear 1.5s;
+	display: block;
+}
+.slide__descr {
+	background-color: rgba(0, 0, 0, .8);
+	bottom: 0;
+	color: #ffffff;
+	right: 0;
+	position: absolute;
+	padding: 10px;
+}
+
+.slide__img {
+	vertical-align: middle;
+}
+
+@keyframes fade {
+	from {
+		opacity: .4;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.картинка{
+	width: 100%;
+	height:850px; 
+	float: left;
+	min-height: 200px;
+	background-repeat: no-repeat;
+	background-size: cover
+	background-position: center;
+	position: relative;
+	image-rendering: auto;
+}
+.stela{
+	width: 100%;
+	height: 608px;
+	float: left;
+	background-color:#e6e6e6;
+	position: relative;
+}
+.стела{
+	margin-top: 25px;
+	margin-left: 25px;
+	float: left;
+	width:700px;
+	height:550px;
+}
+.park{
+	width: 100%;
+	height: 608px;
+	float: left;
+	position: relative;
+}
+.текст{
+	font-size: 26px;
+	margin-top: 15px;
+	margin-left: 15px;
+}
+.текст1{
+	font-size: 19px;
+	margin-top: 15px;
+}
+.онас{
+	width: 100%;
+	height: 708px;
+	float: left;
+	background-color: #363636;
+}
+.инфа{
+	width: 480px;
+	height: 480px;
+	border: solid #e6e6e6;
+	margin-top:100px;
+	margin-left:120px;
+	border-radius: 50%; 
+	background-color: white;
+	position: absolute;
+	float: left;
+	z-index:1;
+}
+.текст2{
+	margin-top:16px;
+	margin-left: 200px;
+	font-size: 15px; 
+}
+.текст3{
+	margin-top: 5px;
+	font-size: 15px;
+}
+.точка{
+	margin-left: 75px;
+}
+.черта{
+	width:332px;
+	margin-left: 70px;
+}
+.текст4{
+	font-size: 20px;
+	margin-top: 20px;
+}
+A{
+	color: black;
+	text-decoration: none;
+}
+ A:visited{
+ 	color:black;
+ }
+ .back{
+ position:fixed;
+ right:10px;
+ bottom:200px;
+ width: 50px;
+ height: 50px;
+ border-color: transparent;
+ border-radius:50%;
+ background-color:green;     
+}
+.back:hover,
+.back:focus{
+	filter: brightness(1.5);
+	outline: none;
+}
+.back:before,
+.back:after{content: '';
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+.back:before{
+width: 5px;
+height: 25px;
+border-top-left-radius: 3px;
+border-top-right-radius: 3px;
+background-color: white; 
+}
+.back:after{
+width:15px;
+height: 15px;
+transform: translate(-50%, -50%) rotate(45deg); 
+border-top: 5px solid white;
+border-left: 5px solid white ;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+ width:700px;
+ height: :700px;
+ margin-top: 40px;
+ margin-left: 550px;
+ float: left;
+}
+.mySlides {
+  display: none;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.простокартинка{
+	width: 50px;
+	height: 50px;
+    margin-left: 1650px;
+    float: right;
+    z-index:1;
+}
+.шапка{
+	width: 50px;
+	height: 50px;
+	margin-top:50px;
+	margin-left:1750px;
+	border-radius: 50%; 
+	background-color: white;
+	position: absolute;
+	float: left;
+	z-index:1;
+}
